@@ -185,12 +185,4 @@ int main() {
 			D[x.first][x.second]--;
 		}
 	}
-	/*
-	for( size_t i = 0; i < maxsize; i++ ) {
-	for( size_t j = 0; j < maxsize; j++ ) {
-	cout << D[i][j] << " ";
-	}
-	cout << endl;
-	}*/
-
 }
