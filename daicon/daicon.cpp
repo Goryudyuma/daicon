@@ -139,6 +139,8 @@ vector<pos> saiki( int point, pos now ) {
 				auto saikiret = saiki( point - 1, next );
 				if( saikiret.size() > ret2.size() ) {
 					ret2 = saikiret;
+				} else if( saikiret.size() == ret2.size() && rand() % 2 ) {
+					ret2 = saikiret;
 				}
 			}
 		}
@@ -150,17 +152,17 @@ vector<pos> saiki( int point, pos now ) {
 }
 /*
 int main() {
-	for( size_t i = 0; i < 30; i++ ) {
-		for( size_t j = 0; j < 30; j++ ) {
-			cout << rand() % 100 << " ";
-		}
-		cout << endl;
-	}
+for( size_t i = 0; i < 30; i++ ) {
+for( size_t j = 0; j < 30; j++ ) {
+cout << rand() % 100 << " ";
+}
+cout << endl;
+}
 }
 */
 
 int main() {
-
+	srand( ( unsigned int )time( NULL ) );
 	D.resize( maxsize, vector<int>( maxsize ) );
 	for( size_t i = 0; i < maxsize; i++ ) {
 		for( size_t j = 0; j < maxsize; j++ ) {
@@ -185,10 +187,10 @@ int main() {
 	}
 	/*
 	for( size_t i = 0; i < maxsize; i++ ) {
-		for( size_t j = 0; j < maxsize; j++ ) {
-			cout << D[i][j] << " ";
-		}
-		cout << endl;
+	for( size_t j = 0; j < maxsize; j++ ) {
+	cout << D[i][j] << " ";
+	}
+	cout << endl;
 	}*/
 
 }
