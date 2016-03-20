@@ -185,4 +185,5 @@ int main() {
 			D[x.first][x.second]--;
 		}
 	}
+
 }
